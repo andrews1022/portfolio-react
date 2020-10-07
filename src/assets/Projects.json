@@ -1,0 +1,30 @@
+[
+  {
+    "projectTitle": "Angelmaker",
+    "summary": "This is a website for AngelMaker",
+    "techUsed": ["html", "css", "scss"],
+    "codeLink": "https://www.google.ca/",
+    "liveLink": "https://www.google.ca/"
+  },
+  {
+    "projectTitle": "Hi Dozo Sushi",
+    "summary": "This is a website for Hi Dozo Sushi",
+    "techUsed": ["html", "css", "scss", "javascript"],
+    "codeLink": "https://www.google.ca/",
+    "liveLink": "https://www.google.ca/"
+  },
+  {
+    "projectTitle": "Bliss Car Share",
+    "summary": "This is a website for Bliss Car Share",
+    "techUsed": ["html", "css", "scss", "bootstrap"],
+    "codeLink": "https://www.google.ca/",
+    "liveLink": "https://www.google.ca/"
+  },
+  {
+    "projectTitle": "Another Band",
+    "summary": "This is a website for Another Band",
+    "techUsed": ["html", "css", "scss"],
+    "codeLink": "https://www.google.ca/",
+    "liveLink": "https://www.google.ca/"
+  }
+]

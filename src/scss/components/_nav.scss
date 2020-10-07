@@ -1,0 +1,12 @@
+.nav {
+  display: flex;
+  justify-content: center;
+
+  &__list {
+    display: flex;
+    align-items: center;
+  }
+
+  &__item {
+  }
+}
