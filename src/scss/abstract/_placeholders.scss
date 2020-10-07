@@ -1,12 +1,9 @@
 @import 'variables';
 
-// Use like this: @extend %flex-align-center;
-
 %centered-background-image {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  // manually add height, or add 'height: 100vh' to have easy fullscreen hero image
 }
 
 %absolute-center {
@@ -69,11 +66,11 @@
 %section-padding-both-sides {
   padding: 0 10%; // change values accordingly
 
-  @media #{$desktop-small} {
+  @media #{$desktopSmall} {
     padding: 0 7%;
   }
 
-  @media #{$laptop-small} {
+  @media #{$laptopSmall} {
     padding: 0 5%;
   }
 }

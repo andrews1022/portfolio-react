@@ -4,7 +4,9 @@ const Footer = () => {
   return (
     <footer>
       <p>
-        © {new Date().getFullYear()} all rights reserved | designed and built and andrew shearer
+        © {new Date().getFullYear()} all rights reserved
+        <span>|</span>
+        designed and built and andrew shearer
       </p>
     </footer>
   );

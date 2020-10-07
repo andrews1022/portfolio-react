@@ -2,8 +2,16 @@
 
 html {
   box-sizing: border-box;
-  font-family: $font-segoe;
+  font-family: $fontSegoe;
   font-size: 100%;
+
+  @media #{$desktopSmall} {
+    font-size: 87.5%;
+  }
+
+  @media #{$tabletLandscape} {
+    font-size: 75%;
+  }
 }
 
 body {
