@@ -1,10 +1,10 @@
 [
   {
-    "projectTitle": "Angelmaker",
-    "summary": "This is a website for AngelMaker",
-    "techUsed": ["html", "css", "scss"],
-    "codeLink": "https://www.google.ca/",
-    "liveLink": "https://www.google.ca/"
+    "projectTitle": "Temperature Converter",
+    "summary": "A simple 3-way temperature converter built using React & TypeScript.",
+    "techUsed": ["Typescript", "React", "CSS (Sass)"],
+    "codeLink": "https://github.com/andrews1022/temperature-converter-react-typescript",
+    "liveLink": "https://awesome-northcutt-6039eb.netlify.app/"
   },
   {
     "projectTitle": "Hi Dozo Sushi",

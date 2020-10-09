@@ -1,4 +1,40 @@
 .hero {
-  &__background {
-  }
+	background-color: $lightCyan;
+	position: relative;
+
+	&__background {
+		height: 100vh;
+		margin-left: auto;
+	}
+
+	&__heading {
+		position: absolute;
+		top: 18%;
+		left: 6.5%;
+		text-align: right;
+	}
+
+	&__heading-name {
+		@include hero-heading($maire, 6.5rem, 800);
+	}
+
+	&__heading-role {
+		@include hero-heading($blueLagoon, 4.25rem, 600);
+	}
+
+	&__secret {
+		position: absolute;
+		bottom: 31%;
+		right: 23%;
+		transform: rotate(-36deg);
+		cursor: default;
+		opacity: 0;
+		transition: $transitionSmooth;
+
+		@media (hover) {
+			&:hover {
+				opacity: 1;
+			}
+		}
+	}
 }

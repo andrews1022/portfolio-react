@@ -1,76 +1,81 @@
 @import 'variables';
 
 %centered-background-image {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 %absolute-center {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
 }
 
 %flex-align-start {
-  display: flex;
-  align-items: flex-start;
+	display: flex;
+	align-items: flex-start;
 }
 
 %flex-align-end {
-  display: flex;
-  align-items: flex-end;
+	display: flex;
+	align-items: flex-end;
 }
 
 %flex-align-center {
-  display: flex;
-  align-items: center;
+	display: flex;
+	align-items: center;
 }
 
 %flex-justify-center {
-  display: flex;
-  justify-content: center;
+	display: flex;
+	justify-content: center;
 }
 
 %flex-align-start-justify-between {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
 }
 
 %flex-align-center-justify-between {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 }
 
 %flex-align-start-justify-center {
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
 }
 
 %flex-both-center {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 %simple-responsive-grid {
-  display: grid;
-  gap: 1rem;
-  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+	display: grid;
+	gap: 1rem;
+	grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
 }
 
 %section-padding-both-sides {
-  padding: 0 10%; // change values accordingly
+	padding: 0 10%; // change values accordingly
 
-  @media #{$desktopSmall} {
-    padding: 0 7%;
-  }
+	@media #{$desktopSmall} {
+		padding: 0 7%;
+	}
 
-  @media #{$laptopSmall} {
-    padding: 0 5%;
-  }
+	@media #{$laptopSmall} {
+		padding: 0 5%;
+	}
+}
+
+%pseudo {
+	content: '';
+	position: absolute;
 }
