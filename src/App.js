@@ -1,5 +1,5 @@
 import React from 'react';
-import Nav from './components/Nav/Nav';
+import Nav from './components/Hero/Nav';
 import Hero from './components/Hero/Hero';
 import Projects from './components/Projects/Projects';
 import About from './components/About/About';
@@ -10,7 +10,6 @@ import './scss/app.min.css';
 const App = () => {
   return (
     <div id='app'>
-      <Nav />
       <Hero />
       <Projects />
       <About />

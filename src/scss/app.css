@@ -74,54 +74,6 @@ video {
   zoom: 1;
 }
 
-.text-white {
-  color: #fff;
-}
-
-.background-white {
-  background-color: #fff;
-}
-
-.border-white {
-  border-color: #fff;
-}
-
-.text-black {
-  color: #000;
-}
-
-.background-black {
-  background-color: #000;
-}
-
-.border-black {
-  border-color: #000;
-}
-
-.text-cinnabar {
-  color: #e74c3c;
-}
-
-.background-cinnabar {
-  background-color: #e74c3c;
-}
-
-.border-cinnabar {
-  border-color: #e74c3c;
-}
-
-.text-sky {
-  color: #3498db;
-}
-
-.background-sky {
-  background-color: #3498db;
-}
-
-.border-sky {
-  border-color: #3498db;
-}
-
 .nav {
   display: flex;
   justify-content: center;
@@ -130,5 +82,23 @@ video {
 .nav__list {
   display: flex;
   align-items: center;
+}
+
+.nav__item {
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 0 5%;
+  position: relative;
+  text-transform: lowercase;
+}
+
+.nav__item:not(:last-of-type)::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 10px;
+  width: 10px;
+  background-color: red;
 }
 /*# sourceMappingURL=app.css.map */

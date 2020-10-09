@@ -6,19 +6,11 @@ $white: #fff;
 $black: #000;
 
 // Colors
-$cinnabar: #e74c3c;
-$sky: #3498db;
-
+$whiteSmoke: #efefef;
 $lightCyan: #cbfafa;
-$charlotte: #9de2e6;
-$deepSkyBlue: #15cefa;
-$glacier: #79b1b9;
-$darkCerulean: #116a8a;
-$wildSand: #f0eeeb;
-$rainee: #acbeb0;
-$starDust: #a3a59e;
-$bandicoot: #8a8468;
-$makara: #6e6857;
+$blueLagoon: #046182;
+$spaceShuttle: #47443a;
+$maire: #2b2a24;
 
 // General/UI
 $bumperPadding: 0 1rem;
@@ -45,8 +37,3 @@ $mobileMedium: 'only screen and (max-width: 480px)';
 $mobileSmall: 'only screen and (max-width: 415px)';
 $mobileXsmall: 'only screen and (max-width: 375px)';
 $mobileTiny: 'only screen and (max-width: 325px)';
-
-// Use with interpolation like this:
-@media #{$laptop} {
-  // Styles go here
-}
