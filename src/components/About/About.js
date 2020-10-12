@@ -1,23 +1,21 @@
 import React from 'react';
-import NewWest from './../../images/new-westminster.jpg';
+import newWestPic from './../../images/new-westminster-cropped.jpg';
 
 const About = ({ section, tools }) => {
 	return (
 		<section className={section.toLowerCase()} id={section.toLowerCase()}>
 			<div>
-				<img src={NewWest} alt='Large W made of shipping containers in New Westminster, BC'></img>
+				<img src={newWestPic} alt='Large W made of shipping containers in New Westminster, BC' />
 			</div>
 			<div>
 				<h2>{section}</h2>
 				<p>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-					ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-					ullamco laboris nisi ut aliquip ex ea commodo consequat.
-				</p>
-				<p>
-					Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-					nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-					deserunt mollit anim id est laborum.
+					i'm a web developer with a passion for design from new westminster, bc. i've also built a
+					few resources to help out fellow web developers.
+					<br />
+					with web development, it was truly love at first site. i spend each and everyday either
+					coding or designing. in fact, i quit my job so i could focus on learning it full time. if
+					that doesn't scream passion, then i don't know what does.
 				</p>
 				<h2>My Tools</h2>
 				<ul>

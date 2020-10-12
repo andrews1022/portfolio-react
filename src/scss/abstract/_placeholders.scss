@@ -64,10 +64,10 @@
 }
 
 %section-padding-both-sides {
-	padding: 0 10%; // change values accordingly
+	padding: 0 8%;
 
 	@media #{$desktopSmall} {
-		padding: 0 7%;
+		padding: 0 6.5%;
 	}
 
 	@media #{$laptopSmall} {

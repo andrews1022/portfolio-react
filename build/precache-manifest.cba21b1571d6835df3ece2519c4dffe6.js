@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6d87f9d61c470b57a00ba0357688f4c9",
+    "revision": "2fa77256af7c0d8ff31db54b2ef7d82c",
     "url": "/index.html"
   },
   {
-    "revision": "4b1fb8aa23683a0c971b",
-    "url": "/static/css/main.08186e2f.chunk.css"
+    "revision": "1416bf18ac0642aebefc",
+    "url": "/static/css/main.ff66cf19.chunk.css"
   },
   {
     "revision": "ba212c5c06494e39c75d",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/2.4edb5eba.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "4b1fb8aa23683a0c971b",
-    "url": "/static/js/main.b3bfc215.chunk.js"
+    "revision": "1416bf18ac0642aebefc",
+    "url": "/static/js/main.afd675c2.chunk.js"
   },
   {
     "revision": "368172bd1bf8a40a2577",
@@ -28,8 +28,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/hero-image.ba7ce8f0.jpg"
   },
   {
-    "revision": "1d2fedac4c579bf31086ce56d0d95bc9",
-    "url": "/static/media/new-westminster.1d2fedac.jpg"
+    "revision": "1f35f700b9407719d58dc925bdf2a467",
+    "url": "/static/media/new-westminster-cropped.1f35f700.jpg"
   },
   {
     "revision": "1bc51ad590efd54a3db4a292468628ef",

@@ -11,13 +11,15 @@
 	}
 
 	&__item {
+		cursor: pointer;
 		font-size: 2rem;
 		font-weight: 600;
 		margin: 0 1.5rem;
 		position: relative;
+		transition: $transitionSmooth;
 
 		&:hover {
-			cursor: pointer;
+			color: $blueLagoon;
 		}
 
 		&:not(:last-of-type) {
@@ -31,4 +33,7 @@
 			}
 		}
 	}
+
+	// &__link {
+	// }
 }

@@ -1,30 +1,16 @@
 [
-  {
-    "projectTitle": "Temperature Converter",
-    "summary": "A simple 3-way temperature converter built using React & TypeScript.",
-    "techUsed": ["Typescript", "React", "CSS (Sass)"],
-    "codeLink": "https://github.com/andrews1022/temperature-converter-react-typescript",
-    "liveLink": "https://awesome-northcutt-6039eb.netlify.app/"
-  },
-  {
-    "projectTitle": "Hi Dozo Sushi",
-    "summary": "This is a website for Hi Dozo Sushi",
-    "techUsed": ["html", "css", "scss", "javascript"],
-    "codeLink": "https://www.google.ca/",
-    "liveLink": "https://www.google.ca/"
-  },
-  {
-    "projectTitle": "Bliss Car Share",
-    "summary": "This is a website for Bliss Car Share",
-    "techUsed": ["html", "css", "scss", "bootstrap"],
-    "codeLink": "https://www.google.ca/",
-    "liveLink": "https://www.google.ca/"
-  },
-  {
-    "projectTitle": "Another Band",
-    "summary": "This is a website for Another Band",
-    "techUsed": ["html", "css", "scss"],
-    "codeLink": "https://www.google.ca/",
-    "liveLink": "https://www.google.ca/"
-  }
+	{
+		"projectTitle": "Startup Generator",
+		"summary": "A fun, simple app to generate a random fake startup to help you build a simple project if you're not sure what to work on next.",
+		"techUsed": ["React", "CSS (Sass)"],
+		"codeLink": "https://github.com/andrews1022/startup-generator-react",
+		"liveLink": "https://startupgenerator.netlify.app/"
+	},
+	{
+		"projectTitle": "Temperature Converter",
+		"summary": "A 3-way temperature converter built using React and TypeScript.",
+		"techUsed": ["Typescript", "React", "CSS (Sass)"],
+		"codeLink": "https://github.com/andrews1022/temperature-converter-react-typescript",
+		"liveLink": "https://react-ts-temperatureconverter.netlify.app/"
+	}
 ]

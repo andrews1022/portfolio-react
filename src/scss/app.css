@@ -8,6 +8,22 @@
   justify-content: center;
 }
 
+.projects {
+  padding: 0 8%;
+}
+
+@media only screen and (max-width: 1440px) {
+  .projects {
+    padding: 0 6.5%;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .projects {
+    padding: 0 5%;
+  }
+}
+
 .nav__item:not(:last-of-type)::after {
   content: '';
   position: absolute;
@@ -41,6 +57,9 @@ body {
 *::before,
 *::after {
   box-sizing: inherit;
+  color: inherit;
+  font-size: inherit;
+  font-weight: inherit;
   margin: 0;
   padding: 0;
 }
@@ -53,7 +72,6 @@ img {
 }
 
 a:link, a:visited {
-  color: inherit;
   text-decoration: none;
 }
 
@@ -149,14 +167,16 @@ video {
 }
 
 .nav__item {
+  cursor: pointer;
   font-size: 2rem;
   font-weight: 600;
   margin: 0 1.5rem;
   position: relative;
+  transition: all 175ms ease-in-out;
 }
 
 .nav__item:hover {
-  cursor: pointer;
+  color: #046182;
 }
 
 .nav__item:not(:last-of-type)::after {
