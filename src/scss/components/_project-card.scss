@@ -1,0 +1,41 @@
+.project-card {
+	border: 1px solid $maire;
+	border-radius: 1rem;
+	margin-bottom: 2%;
+	padding: 1.5%;
+
+	&__header {
+		display: flex;
+		align-items: center;
+		margin-bottom: 1.5%;
+	}
+
+	&__thumbnail {
+		margin-right: 1.5%;
+		width: 8rem;
+	}
+
+	&__header-inner {
+	}
+
+	&__title {
+		color: $blueLagoon;
+		font-size: 3rem;
+		line-height: 1.45;
+	}
+
+	&__tech {
+	}
+
+	&__summary {
+	}
+
+	&__icon-row {
+	}
+
+	&__link {
+	}
+
+	&__icon {
+	}
+}

@@ -2,8 +2,10 @@ import React from 'react';
 import newWestPic from './../../images/new-westminster-cropped.jpg';
 
 const About = ({ section, tools }) => {
+	const sectionName = section.toLowerCase();
+
 	return (
-		<section className={section.toLowerCase()} id={section.toLowerCase()}>
+		<section className={sectionName} id={sectionName}>
 			<div>
 				<img src={newWestPic} alt='Large W made of shipping containers in New Westminster, BC' />
 			</div>

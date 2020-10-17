@@ -1,12 +1,14 @@
 .nav {
-	@extend %flex-justify-center;
+	display: flex;
+	justify-content: center;
 	position: absolute;
 	top: 2.5%;
 	left: 50%;
 	transform: translateX(-50%);
 
 	&__list {
-		@extend %flex-align-center;
+		display: flex;
+		align-items: center;
 		color: $maire;
 	}
 
@@ -25,7 +27,8 @@
 		&:not(:last-of-type) {
 			&::after {
 				@include size(3rem, 1px);
-				@extend %pseudo;
+				content: '';
+				position: absolute;
 				top: 62.5%;
 				right: -1.5rem;
 				transform: translateY(-50%);
