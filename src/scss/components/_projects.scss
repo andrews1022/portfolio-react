@@ -1,14 +1,14 @@
 .projects {
-	@extend %section-padding-both-sides;
-	margin: 3.5% 0 7% 0;
+	@extend %section-padding;
+	margin: 3.5% 0;
 
 	&__heading {
-		color: $maire;
-		font-size: 5.5rem;
-		font-weight: 800;
-		margin-bottom: 3.5%;
+		@include section-heading($maire, 3.5%);
 	}
 
 	&__list {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
 	}
 }

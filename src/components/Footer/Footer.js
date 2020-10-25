@@ -2,10 +2,10 @@ import React from 'react';
 
 const Footer = () => {
 	return (
-		<footer>
-			<p>
+		<footer className='footer'>
+			<p className='footer__text'>
 				© {new Date().getFullYear()} all rights reserved
-				<span>|</span>
+				<span className='footer__divider'> | </span>
 				designed and built and andrew shearer
 			</p>
 		</footer>

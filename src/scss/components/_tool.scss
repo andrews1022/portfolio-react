@@ -1,0 +1,19 @@
+.tool {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+	margin: 3% 0 0 auto;
+	width: 75%;
+
+	&__text {
+		@extend %copy;
+		background-color: $lightCyan;
+		border-radius: 4rem;
+		box-shadow: $subtleBoxShadow;
+		color: $maire;
+		font-weight: 600;
+		margin: 1.5%;
+		padding: 1% 4%;
+	}
+}

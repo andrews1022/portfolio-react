@@ -1,70 +1,31 @@
 @import 'variables';
 
-// %centered-background-image {
-// 	background-position: center;
-// 	background-repeat: no-repeat;
-// 	background-size: cover;
-// }
+%pseudo {
+	content: '';
+	position: absolute;
+}
 
-// %absolute-center {
-// 	position: absolute;
-// 	left: 50%;
-// 	top: 50%;
-// 	transform: translate(-50%, -50%);
-// }
+%flex-align-center {
+	display: flex;
+	align-items: center;
+}
 
-// %flex-align-start {
-// 	display: flex;
-// 	align-items: flex-start;
-// }
-
-// %flex-align-end {
-// 	display: flex;
-// 	align-items: flex-end;
-// }
-
-// %flex-align-center {
-// 	display: flex;
-// 	align-items: center;
-// }
-
-// %flex-justify-center {
-// 	display: flex;
-// 	justify-content: center;
-// }
-
-// %flex-align-start-justify-between {
-// 	display: flex;
-// 	align-items: flex-start;
-// 	justify-content: space-between;
-// }
-
-// %flex-align-center-justify-between {
-// 	display: flex;
-// 	align-items: center;
-// 	justify-content: space-between;
-// }
-
-// %flex-align-start-justify-center {
-// 	display: flex;
-// 	align-items: flex-start;
-// 	justify-content: center;
-// }
-
-// %flex-both-center {
-// 	display: flex;
-// 	align-items: center;
-// 	justify-content: center;
-// }
-
-%section-padding-both-sides {
-	padding: 0 7%;
+%section-padding {
+	padding-left: 7%;
+	padding-right: 7%;
 
 	@media #{$desktopSmall} {
-		padding: 0 5.5%;
+		padding-left: 5.5%;
+		padding-right: 5.5%;
 	}
 
 	@media #{$laptopSmall} {
-		padding: 0 4%;
+		padding-left: 4%;
+		padding-right: 4%;
 	}
+}
+
+%copy {
+	font-size: 1.375rem;
+	line-height: 1.4;
 }

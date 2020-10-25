@@ -4,14 +4,13 @@
 
 @import 'base/resets';
 
+@import 'components/about';
 @import 'components/buttons';
+@import 'components/contact';
+@import 'components/footer';
 @import 'components/form';
 @import 'components/hero';
 @import 'components/nav';
 @import 'components/project-card';
 @import 'components/projects';
-
-@import 'layout/footer';
-@import 'layout/grid';
-@import 'layout/header';
-@import 'layout/main';
+@import 'components/tool';

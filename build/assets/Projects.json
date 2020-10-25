@@ -1,0 +1,34 @@
+[
+	{
+		"projectTitle": "Startup Generator",
+		"summary": "A fun, simple app to generate a random fake startup to help you build your next project.",
+		"techUsed": ["React", "CSS (Sass)"],
+		"codeLink": "https://github.com/andrews1022/startup-generator-react",
+		"liveLink": "https://startupgenerator.netlify.app/",
+		"thumbnail": "./project-screenshots/screenshot-startup-generator.jpg"
+	},
+	{
+		"projectTitle": "Temperature Converter",
+		"summary": "A 3-way temperature converter built using React and TypeScript.",
+		"techUsed": ["Typescript", "React", "CSS (Sass)"],
+		"codeLink": "https://github.com/andrews1022/temperature-converter-react-typescript",
+		"liveLink": "https://react-ts-temperatureconverter.netlify.app/",
+		"thumbnail": "./project-screenshots/screenshot-temp-converter.jpg"
+	},
+	{
+		"projectTitle": "Web Dev 2020 Course List",
+		"summary": "A list of Udemy courses from Brad Traversy's Web Development 2020 video",
+		"techUsed": null,
+		"codeLink": "https://github.com/andrews1022/web-development-2020-course-list",
+		"liveLink": null,
+		"thumbnail": "./project-screenshots/screenshot-course-list.jpg"
+	},
+	{
+		"projectTitle": "JavaScript Handbook",
+		"summary": "A compilation of notes on vanilla JavaScript",
+		"techUsed": null,
+		"codeLink": "https://github.com/andrews1022/javascript-handbook",
+		"liveLink": null,
+		"thumbnail": "./project-screenshots/screenshot-javascript-handbook.jpg"
+	}
+]

@@ -1,11 +1,5 @@
 import React from 'react';
 
-const Tool = () => {
-	return (
-		<div>
-			<p>Tool component</p>
-		</div>
-	);
-};
+const Tool = ({ toolText }) => <li className='tool__text'>{toolText}</li>;
 
 export default Tool;

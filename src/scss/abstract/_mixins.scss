@@ -15,14 +15,9 @@
 	font-weight: $weight;
 }
 
-@mixin responsive-grid(
-	$gap: 0.75rem,
-	$minxmax: (
-		30rem,
-		1fr,
-	)
-) {
-	display: grid;
-	grid-gap: $gap;
-	grid-template-columns: repeat(auto-fit, minmax($minxmax));
+@mixin section-heading($color, $margin, $size: 5.5rem, $weight: 800) {
+	color: $color;
+	font-size: $size;
+	font-weight: $weight;
+	margin-bottom: $margin;
 }

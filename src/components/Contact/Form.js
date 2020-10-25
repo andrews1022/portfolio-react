@@ -2,7 +2,7 @@ import React from 'react';
 
 const Form = () => {
 	return (
-		<form>
+		<form className='form'>
 			<h3>Hello from form component!</h3>
 		</form>
 	);

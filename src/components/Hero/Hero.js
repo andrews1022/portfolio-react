@@ -2,7 +2,11 @@ import React from 'react';
 import Nav from './Nav';
 import heroImage from './../../images/hero-image.jpg';
 
-const Hero = ({ fullName, role, secretMessage, navLinks }) => {
+const Hero = ({ navLinks }) => {
+	const fullName = 'Andrew Shearer';
+	const role = 'Web Developer';
+	const secretMessage = "That's me!";
+
 	return (
 		<section className='hero'>
 			<Nav navLinks={navLinks} />

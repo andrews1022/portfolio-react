@@ -1,0 +1,47 @@
+.about {
+	@extend %section-padding;
+	background-color: $blueLagoon;
+	clip-path: polygon(0 15%, 100% 0, 100% 85%, 0% 100%);
+	padding-top: 11%;
+	padding-bottom: 10%;
+
+	&__row {
+		@extend %flex-align-center;
+	}
+
+	&__box {
+		flex: $flexFiftyFifty;
+
+		// &:first-of-type {
+		// }
+
+		&:last-of-type {
+			text-align: right;
+		}
+	}
+
+	&__image {
+		box-shadow: $subtleBoxShadow;
+		border-radius: 1rem;
+	}
+
+	&__heading {
+		@include section-heading($whiteSmoke, 1%);
+
+		// &:first-of-type {
+		// }
+
+		&:last-of-type {
+			margin-top: 3.5%;
+		}
+	}
+
+	&__copy {
+		@extend %copy;
+		color: $whiteSmoke;
+
+		&:first-of-type {
+			margin-bottom: 2.5%;
+		}
+	}
+}
