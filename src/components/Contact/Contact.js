@@ -24,10 +24,10 @@ const Contact = ({ section }) => {
 						incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
 						exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 					</p>
-					<div>
+					<div className='contact__social-row'>
 						{socialLinks.map((link) => (
 							<a href={link.url} key={link.type} target='_blank' rel='noopener noreferrer'>
-								{<i className={link.icon}></i>}
+								{<i className={`contact__icon ${link.icon}`}></i>}
 							</a>
 						))}
 					</div>
