@@ -1,5 +1,6 @@
 import React from 'react';
 import Tool from './Tool';
+import Heading from './../UI/Heading';
 import newWestPic from './../../images/new-westminster-cropped.jpg';
 
 const About = ({ section }) => {
@@ -26,17 +27,17 @@ const About = ({ section }) => {
 					/>
 				</div>
 				<div className='about__box'>
-					<h2 className='about__heading'>{section}</h2>
+					<Heading text={section} color='white-smoke' />
 					<p className='about__copy'>
-						i'm a web developer with a passion for design from new westminster, bc. i've also built
-						a few resources to help out fellow web developers.
+						I’m a web developer with a passion for learning from New Westminster, BC. I’ve also
+						built a few resources to help out fellow web developers.
 					</p>
 					<p className='about__copy'>
-						with web development, it was truly love at first site. i spend each and everyday either
-						coding or designing. in fact, i quit my job so i could focus on learning it full time.
-						if that doesn't scream passion, then i don't know what does.
+						With web development, it was truly love at first site. I spend each and everyday coding
+						and learning. In fact, I quit my job so I could focus getting into the industry full
+						time, and it worked. If that doesn't scream passion, then I don't know what does.
 					</p>
-					<h2 className='about__heading'>My Tools</h2>
+					<Heading text='My Tools' color='white-smoke' />
 					<ul className='tool'>
 						{tools.map((tool) => (
 							<Tool key={tool} toolText={tool} />

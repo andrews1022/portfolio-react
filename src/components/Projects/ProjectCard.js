@@ -8,8 +8,18 @@ const ProjectCard = ({ project }) => {
 				<div className='project-card__header-inner'>
 					<h2 className='project-card__title'>{project.projectTitle}</h2>
 					<p className='project-card__tech'>
+						{project.techUsed && <span>Tech Used: </span>}
+
+						{/* insert each techUsed and on the last one, do NOT add a comma */}
 						{project.techUsed &&
-							project.techUsed.map((tech) => <span key={tech}>Tech Used: {tech} </span>)}
+							project.techUsed.map((element, index, array) => {
+								return (
+									<span key={element}>
+										{element}
+										{index !== array.length - 1 ? ', ' : ''}
+									</span>
+								);
+							})}
 					</p>
 				</div>
 			</div>

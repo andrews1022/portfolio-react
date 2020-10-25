@@ -1,0 +1,13 @@
+$colors: (
+	white-smoke: $whiteSmoke,
+	light-cyan: $lightCyan,
+	blue-lagoon: $blueLagoon,
+	space-shuttle: $spaceShuttle,
+	maire: $maire
+);
+
+@each $name, $color in $colors {
+	.text-#{$name} {
+		color: $color;
+	}
+}

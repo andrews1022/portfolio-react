@@ -1,12 +1,12 @@
 // Fonts
 $fontSegoe: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
-// Basic Shades
+// Shades
 $white: #fff;
+$whiteSmoke: #efefef;
 $black: #000;
 
 // Colors
-$whiteSmoke: #efefef;
 $lightCyan: #cbfafa;
 $blueLagoon: #046182;
 $spaceShuttle: #47443a;
@@ -18,9 +18,10 @@ $flexFiftyFifty: 1 1 50%;
 $marginCenter: 0 auto;
 $subtleBoxShadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.15);
 $transitionSmooth: all 175ms ease-in-out;
+$transitionSmoothResize: all 250ms ease-in-out;
 $transitionSmoothLong: all 500ms ease-in-out;
 
-// BREAKPOINTS (start building at 320px, then go up from there with these breakpoints)
+// Breakpoints
 $desktop4k: 'only screen and (min-width: 3840px)';
 $desktop1440p: 'only screen and (max-width: 2560px)';
 $desktopHd: 'only screen and (max-width: 1920px)';

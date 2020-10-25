@@ -1,14 +1,69 @@
 .form {
+	@extend %rounded-border-with-subtle-box-shadow;
+	color: $maire;
+	padding: 3%;
+
+	@media #{$tabletPortrait} {
+		padding: 4%;
+	}
+
+	@media #{$mobileMedium} {
+		padding: 5%;
+	}
+
 	&__group {
+		&:not(:last-of-type) {
+			margin-bottom: 3.5%;
+		}
+
+		&:last-of-type {
+			@extend %flex-justify-center;
+		}
 	}
 
 	&__label {
+		display: block;
+		font-size: 1.375rem;
+		font-weight: 600;
+		margin-bottom: 1%;
 	}
 
 	&__input {
+		font-family: $fontSegoe;
+		font-size: 1.125rem;
+		padding: 1.25%;
+		width: 100%;
+
 		&--message {
+			min-height: 7.5rem;
+			resize: vertical;
 		}
+
 		&--submit {
+			background-color: $blueLagoon;
+			border: none;
+			border-radius: 4rem;
+			color: $white;
+			font-size: 1.375rem;
+			font-weight: 600;
+			padding: 2%;
+			transition: $transitionSmooth;
+			width: 40%;
+
+			@media (hover) {
+				&:hover {
+					background-color: lighten($blueLagoon, 5%);
+					box-shadow: $subtleBoxShadow;
+					cursor: pointer;
+					transform: translateY(-0.25rem);
+				}
+			}
+
+			&:focus {
+				background-color: darken($blueLagoon, 5%);
+				outline: none;
+				transform: translateY(0.125rem);
+			}
 		}
 	}
 }

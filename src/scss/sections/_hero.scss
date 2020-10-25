@@ -1,0 +1,114 @@
+.hero {
+	background-color: $lightCyan;
+	position: relative;
+
+	&__background {
+		height: 100vh;
+		margin-left: auto;
+		transition: $transitionSmoothResize;
+
+		@media #{$laptopSmall} {
+			height: auto;
+		}
+
+		@media #{$tabletPortrait} {
+			padding-top: 10%;
+		}
+
+		@media #{$mobileMedium} {
+			padding-top: 15%;
+		}
+	}
+
+	&__heading {
+		position: absolute;
+		top: 18%;
+		left: 6.5%;
+		text-align: right;
+		transition: $transitionSmoothResize;
+
+		@media #{$desktopMedium} {
+			top: 16%;
+		}
+
+		@media #{$desktopSmall} {
+			left: 5.5%;
+		}
+
+		@media #{$laptop} {
+			text-align: left;
+		}
+
+		@media #{$laptopSmall} {
+			top: 12%;
+		}
+
+		@media #{$mobileMedium} {
+			top: 13%;
+		}
+
+		@media #{$mobileSmall} {
+			top: 16%;
+		}
+	}
+
+	&__heading-name {
+		@include hero-heading($maire, 6.5rem, 800);
+
+		@media #{$desktopMedium} {
+			font-size: 6rem;
+		}
+
+		@media only screen and (max-width: 1500px) {
+			font-size: 5.5rem;
+		}
+
+		@media only screen and (max-width: 1150px) {
+			font-size: 5rem;
+		}
+
+		@media #{$tabletMedium} {
+			font-size: 4.5rem;
+		}
+
+		@media #{$tabletPortrait} {
+			font-size: 4rem;
+		}
+
+		@media #{$mobileMedium} {
+			font-size: 3.5rem;
+		}
+
+		@media #{$mobileSmall} {
+			font-size: 3rem;
+		}
+	}
+
+	&__heading-role {
+		@include hero-heading($blueLagoon, 4.25rem, 600);
+
+		@media #{$desktopMedium} {
+			font-size: 3.75rem;
+		}
+
+		@media only screen and (max-width: 1500px) {
+			font-size: 3.25rem;
+		}
+
+		@media only screen and (max-width: 1150px) {
+			font-size: 2.75rem;
+		}
+
+		@media #{$tabletMedium} {
+			font-size: 2.25rem;
+		}
+
+		@media #{$tabletPortrait} {
+			font-size: 1.75rem;
+		}
+
+		@media #{$mobileMedium} {
+			font-size: 1.25rem;
+		}
+	}
+}

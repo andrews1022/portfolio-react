@@ -1,0 +1,78 @@
+.contact {
+	@extend %section-padding;
+	padding-top: 4%;
+	padding-bottom: 5%;
+
+	&__row {
+		@extend %flex-align-center;
+
+		@media #{$tabletPortrait} {
+			flex-direction: column;
+		}
+	}
+
+	&__box {
+		&:first-of-type {
+			flex: 0 1 45%;
+		}
+
+		&:last-of-type {
+			flex: 0 1 47.5%;
+			margin-left: auto;
+
+			@media #{$tabletPortrait} {
+				margin: 3.5% 0 0 0;
+				width: 100%;
+			}
+
+			@media #{$mobileMedium} {
+				margin-top: 5%;
+			}
+		}
+	}
+
+	&__heading {
+		@include section-heading($maire, 0);
+	}
+
+	&__copy {
+		@extend %copy;
+		color: $maire;
+		margin: 4.5% 0 3% 0;
+
+		@media #{$mobileMedium} {
+			margin: 5% 0;
+		}
+	}
+
+	&__icon-row {
+		@extend %flex-align-center;
+	}
+
+	&__icon-link {
+		color: $maire;
+		display: inline-block;
+		font-size: 3.25rem;
+		transition: $transitionSmooth;
+
+		&:not(:last-of-type) {
+			margin-right: 4%;
+
+			@media #{$tabletPortrait} {
+				margin-right: 3%;
+			}
+		}
+
+		@media (hover) {
+			&:hover,
+			&:active,
+			&:focus {
+				color: $blueLagoon;
+				transform: translateY(-0.25rem);
+			}
+		}
+	}
+
+	// &__icon {
+	// }
+}

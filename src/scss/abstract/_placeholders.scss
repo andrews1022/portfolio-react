@@ -10,6 +10,11 @@
 	align-items: center;
 }
 
+%flex-justify-center {
+	display: flex;
+	justify-content: center;
+}
+
 %section-padding {
 	padding-left: 7%;
 	padding-right: 7%;
@@ -18,14 +23,15 @@
 		padding-left: 5.5%;
 		padding-right: 5.5%;
 	}
-
-	@media #{$laptopSmall} {
-		padding-left: 4%;
-		padding-right: 4%;
-	}
 }
 
 %copy {
 	font-size: 1.375rem;
 	line-height: 1.4;
+}
+
+%rounded-border-with-subtle-box-shadow {
+	border: 1px solid $maire;
+	border-radius: 1rem;
+	box-shadow: $subtleBoxShadow;
 }

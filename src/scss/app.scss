@@ -3,14 +3,16 @@
 @import 'abstract/variables';
 
 @import 'base/resets';
+@import 'base/utility-classes';
 
-@import 'components/about';
-@import 'components/buttons';
-@import 'components/contact';
-@import 'components/footer';
 @import 'components/form';
-@import 'components/hero';
+@import 'components/heading';
 @import 'components/nav';
 @import 'components/project-card';
-@import 'components/projects';
 @import 'components/tool';
+
+@import 'sections/about';
+@import 'sections/contact';
+@import 'sections/footer';
+@import 'sections/hero';
+@import 'sections/projects';

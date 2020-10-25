@@ -18,7 +18,7 @@
 	{
 		"projectTitle": "Web Dev 2020 Course List",
 		"summary": "A list of Udemy courses from Brad Traversy's Web Development 2020 video",
-		"techUsed": null,
+		"techUsed": ["Markdown"],
 		"codeLink": "https://github.com/andrews1022/web-development-2020-course-list",
 		"liveLink": null,
 		"thumbnail": "./project-screenshots/screenshot-course-list.jpg"
@@ -26,7 +26,7 @@
 	{
 		"projectTitle": "JavaScript Handbook",
 		"summary": "A compilation of notes on vanilla JavaScript",
-		"techUsed": null,
+		"techUsed": ["Markdown"],
 		"codeLink": "https://github.com/andrews1022/javascript-handbook",
 		"liveLink": null,
 		"thumbnail": "./project-screenshots/screenshot-javascript-handbook.jpg"

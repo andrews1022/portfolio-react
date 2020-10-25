@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import ProjectCard from './ProjectCard';
+import Heading from './../UI/Heading';
 
 const Projects = ({ section }) => {
 	const sectionName = section.toLowerCase();
@@ -14,7 +15,7 @@ const Projects = ({ section }) => {
 
 	return (
 		<section className={sectionName} id={sectionName}>
-			<h2 className='projects__heading'>{section}</h2>
+			<Heading text={section} color='maire' />
 			<ul className='projects__list'>
 				{/* loop over projects, and create ProjectCard component for each project */}
 				{projects.map((project) => (

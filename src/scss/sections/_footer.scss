@@ -1,0 +1,35 @@
+.footer {
+	background-color: $maire;
+	color: $whiteSmoke;
+	clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 100%);
+	font-size: 2rem;
+	font-weight: 600;
+	padding: 5% 0 4% 0;
+	text-align: center;
+
+	@media #{$tabletPortrait} {
+		font-size: 1.5rem;
+		padding: 6% 3% 5% 3%;
+	}
+
+	@media #{$mobileMedium} {
+		clip-path: none;
+		margin-top: 2%;
+	}
+
+	@media #{$mobileSmall} {
+		font-size: 1.25rem;
+	}
+
+	&__text {
+		line-height: 1.5;
+	}
+
+	&__divider {
+		@media #{$mobileXlarge} {
+			display: block;
+			opacity: 0;
+			margin: -1rem;
+		}
+	}
+}

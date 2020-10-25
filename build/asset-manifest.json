@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.9b009e1f.chunk.css",
-    "main.js": "/static/js/main.992ac57a.chunk.js",
-    "main.js.map": "/static/js/main.992ac57a.chunk.js.map",
+    "main.css": "/static/css/main.24c5e15a.chunk.css",
+    "main.js": "/static/js/main.639c7d3e.chunk.js",
+    "main.js.map": "/static/js/main.639c7d3e.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.8cfa3b8a.js",
     "runtime-main.js.map": "/static/js/runtime-main.8cfa3b8a.js.map",
     "static/js/2.c5b80354.chunk.js": "/static/js/2.c5b80354.chunk.js",
     "static/js/2.c5b80354.chunk.js.map": "/static/js/2.c5b80354.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.d3ed681aa7a9ec10827b2da907795003.js": "/precache-manifest.d3ed681aa7a9ec10827b2da907795003.js",
+    "precache-manifest.d4045c5e14b622b0c1c39d6fb5836596.js": "/precache-manifest.d4045c5e14b622b0c1c39d6fb5836596.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.9b009e1f.chunk.css.map": "/static/css/main.9b009e1f.chunk.css.map",
+    "static/css/main.24c5e15a.chunk.css.map": "/static/css/main.24c5e15a.chunk.css.map",
     "static/js/2.c5b80354.chunk.js.LICENSE.txt": "/static/js/2.c5b80354.chunk.js.LICENSE.txt",
     "static/media/hero-image.jpg": "/static/media/hero-image.ba7ce8f0.jpg",
     "static/media/new-westminster-cropped.jpg": "/static/media/new-westminster-cropped.1f35f700.jpg"
@@ -18,7 +18,7 @@
   "entrypoints": [
     "static/js/runtime-main.8cfa3b8a.js",
     "static/js/2.c5b80354.chunk.js",
-    "static/css/main.9b009e1f.chunk.css",
-    "static/js/main.992ac57a.chunk.js"
+    "static/css/main.24c5e15a.chunk.css",
+    "static/js/main.639c7d3e.chunk.js"
   ]
 }

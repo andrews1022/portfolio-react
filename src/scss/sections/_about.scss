@@ -1,0 +1,90 @@
+.about {
+	@extend %section-padding;
+	background-color: $blueLagoon;
+	clip-path: polygon(0 15%, 100% 0, 100% 85%, 0% 100%);
+	padding-top: 11%;
+	padding-bottom: 11%;
+
+	@media #{$desktopSmall} {
+		padding-top: 12.5%;
+		padding-bottom: 12.5%;
+	}
+
+	@media only screen and (max-width: 1195px) {
+		padding-bottom: 15%;
+	}
+
+	@media #{$tabletPortrait} {
+		clip-path: polygon(0 5%, 100% 0, 100% 95%, 0% 100%);
+	}
+
+	@media #{$mobileMedium} {
+		clip-path: none;
+		padding-top: 7%;
+		padding-bottom: 7%;
+	}
+
+	&__row {
+		@extend %flex-align-center;
+
+		@media #{$tabletPortrait} {
+			flex-direction: column;
+		}
+	}
+
+	&__box {
+		&:first-of-type {
+			flex: $flexFiftyFifty;
+
+			@media #{$tabletPortrait} {
+				width: 100%;
+			}
+		}
+
+		&:last-of-type {
+			flex: $flexFiftyFifty;
+			text-align: right;
+
+			@media #{$tabletPortrait} {
+				margin-top: 5%;
+				text-align: left;
+			}
+		}
+	}
+
+	&__image {
+		box-shadow: $subtleBoxShadow;
+		border-radius: 1rem;
+
+		@media #{$tabletPortrait} {
+			margin: 0 auto;
+		}
+	}
+
+	&__copy {
+		@extend %copy;
+		color: $whiteSmoke;
+		margin: 0 0 3.5% auto;
+		width: 75%;
+
+		&:first-of-type {
+			margin-bottom: 2.5%;
+		}
+
+		@media #{$tabletLandscape} {
+			width: 82.5%;
+		}
+
+		@media #{$tabletMedium} {
+			width: 90%;
+		}
+
+		@media #{$tabletPortrait} {
+			margin-left: 0;
+		}
+
+		@media #{$mobileMedium} {
+			width: 100%;
+		}
+	}
+}

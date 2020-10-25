@@ -1,11 +1,19 @@
 .project-card {
-	border: 1px solid $maire;
-	border-radius: 1rem;
-	box-shadow: $subtleBoxShadow;
+	@extend %rounded-border-with-subtle-box-shadow;
 	color: $maire;
 	flex: 0 1 48.5%;
 	margin-bottom: 3%;
 	padding: 2.5% 2%;
+
+	@media #{$tabletPortrait} {
+		flex: 1 1 100%;
+		padding: 3.5% 3%;
+	}
+
+	@media #{$mobileMedium} {
+		margin-bottom: 5%;
+		padding: 4.5% 4%;
+	}
 
 	&__header {
 		@extend %flex-align-center;
@@ -15,24 +23,33 @@
 		border-radius: 0.5rem;
 		transition: $transitionSmooth;
 		width: 9rem;
+
+		@media #{$mobileSmall} {
+			display: none;
+		}
 	}
 
 	&__header-inner {
 		margin-left: 2%;
+
+		@media #{$laptopSmall} {
+			margin-left: 3.25%;
+		}
+
+		@media #{$mobileSmall} {
+			margin-left: 0;
+		}
 	}
 
 	&__title {
 		color: $blueLagoon;
 		font-size: 3rem;
 		font-weight: 600;
+		line-height: 1.15;
 		margin-bottom: 2.5%;
-	}
 
-	&__tech {
-		span {
-			&:not(:last-of-type) {
-				margin-right: 1%;
-			}
+		@media #{$desktopSmall} {
+			font-size: 2.625rem;
 		}
 	}
 
@@ -61,6 +78,7 @@
 			&:active,
 			&:focus {
 				color: $blueLagoon;
+				transform: translateY(-0.25rem);
 			}
 		}
 	}

@@ -6,6 +6,19 @@
 	margin: 3% 0 0 auto;
 	width: 75%;
 
+	@media #{$desktopSmall} {
+		width: 90%;
+	}
+
+	@media #{$tabletPortrait} {
+		justify-content: flex-start;
+		margin-left: 0;
+	}
+
+	@media #{$mobileMedium} {
+		width: 100%;
+	}
+
 	&__text {
 		@extend %copy;
 		background-color: $lightCyan;
@@ -15,5 +28,9 @@
 		font-weight: 600;
 		margin: 1.5%;
 		padding: 1% 4%;
+
+		@media #{$tabletPortrait} {
+			margin: 2% 2% 2% 0;
+		}
 	}
 }

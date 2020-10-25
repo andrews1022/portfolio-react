@@ -1,4 +1,5 @@
 import React from 'react';
+import Heading from './../UI/Heading';
 import Form from './Form';
 
 const Contact = ({ section }) => {
@@ -6,27 +7,32 @@ const Contact = ({ section }) => {
 
 	const socialLinks = [
 		{ type: 'Resume', icon: 'fas fa-file-pdf', url: './assets/resume.pdf' },
+		{ type: 'GitHub', icon: 'fab fa-github', url: 'https://github.com/andrews1022' },
 		{
 			type: 'LinkedIn',
 			icon: 'fab fa-linkedin',
 			url: 'https://www.linkedin.com/in/andrew-shearer-webdev/'
-		},
-		{ type: 'GitHub', icon: 'fab fa-github', url: 'https://github.com/andrews1022' }
+		}
 	];
 
 	return (
 		<section className={sectionName} id={sectionName}>
 			<div className='contact__row'>
 				<div className='contact__box'>
-					<h2 className='contact__heading'>Get In Touch</h2>
+					<Heading text='Get In Touch' color='maire' />
 					<p className='contact__copy'>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-						incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-						exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+						If you think I’d make a great fit for your team, feel free to send me a message, or
+						reach out to me on LinkedIn!
 					</p>
-					<div className='contact__social-row'>
+					<div className='contact__icon-row'>
 						{socialLinks.map((link) => (
-							<a href={link.url} key={link.type} target='_blank' rel='noopener noreferrer'>
+							<a
+								className='contact__icon-link'
+								href={link.url}
+								key={link.type}
+								target='_blank'
+								rel='noopener noreferrer'
+							>
 								{<i className={`contact__icon ${link.icon}`}></i>}
 							</a>
 						))}

@@ -2,13 +2,18 @@
 	@extend %section-padding;
 	margin: 3.5% 0;
 
-	&__heading {
-		@include section-heading($maire, 3.5%);
-	}
-
 	&__list {
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-between;
+		margin-top: 3%;
+
+		@media #{$tabletPortrait} {
+			margin-top: 4.5%;
+		}
+
+		@media #{$mobileMedium} {
+			margin-top: 7.5%;
+		}
 	}
 }
