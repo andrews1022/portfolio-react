@@ -1,0 +1,11 @@
+.icon {
+	transition: $transitionSmooth;
+
+	@media (hover) {
+		&:hover,
+		&:active,
+		&:focus {
+			transform: translateY(-0.25rem);
+		}
+	}
+}

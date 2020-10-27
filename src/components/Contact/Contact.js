@@ -1,5 +1,6 @@
 import React from 'react';
 import Heading from './../UI/Heading';
+import Icon from './../UI/Icon';
 import Form from './Form';
 
 const Contact = ({ section }) => {
@@ -33,7 +34,7 @@ const Contact = ({ section }) => {
 								target='_blank'
 								rel='noopener noreferrer'
 							>
-								{<i className={`contact__icon ${link.icon}`}></i>}
+								<Icon code={link.icon} color='maire' size='large' />
 							</a>
 						))}
 					</div>

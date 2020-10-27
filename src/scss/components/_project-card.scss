@@ -1,56 +1,60 @@
 .project-card {
 	@extend %rounded-border-with-subtle-box-shadow;
 	color: $maire;
-	flex: 0 1 48.5%;
+	flex: 0 1 32%;
 	margin-bottom: 3%;
-	padding: 2.5% 2%;
+	overflow-x: hidden;
+	transition: $transitionSmooth;
+
+	&:hover {
+		transform: scale(1.02);
+	}
+
+	&:not(:nth-child(3n)) {
+		margin-right: auto;
+
+		@media #{$tabletLandscape} {
+			margin-right: 0;
+		}
+	}
+
+	&:nth-child(odd) {
+		@media #{$tabletLandscape} {
+			margin-right: auto;
+		}
+	}
 
 	@media #{$tabletPortrait} {
 		flex: 1 1 100%;
-		padding: 3.5% 3%;
 	}
 
 	@media #{$mobileMedium} {
 		margin-bottom: 5%;
-		padding: 4.5% 4%;
 	}
 
-	&__header {
-		@extend %flex-align-center;
-	}
+	// &__thumbnail {
+	// }
 
-	&__thumbnail {
-		border-radius: 0.5rem;
-		transition: $transitionSmooth;
-		width: 9rem;
-
-		@media #{$mobileSmall} {
-			display: none;
-		}
-	}
-
-	&__header-inner {
-		margin-left: 2%;
-
-		@media #{$laptopSmall} {
-			margin-left: 3.25%;
-		}
-
-		@media #{$mobileSmall} {
-			margin-left: 0;
-		}
+	&__inner {
+		padding: 3% 4% 4.5% 4%;
 	}
 
 	&__title {
 		color: $blueLagoon;
-		font-size: 3rem;
-		font-weight: 600;
-		line-height: 1.15;
+		font: 600 2.625rem/1.15 $fontSegoe;
 		margin-bottom: 2.5%;
 
 		@media #{$desktopSmall} {
-			font-size: 2.625rem;
+			font-size: 2.5rem;
 		}
+
+		@media #{$tabletLandscape} {
+			font-size: 2.375rem;
+		}
+	}
+
+	&__tech {
+		font-size: 1.125rem;
 	}
 
 	&__summary {
@@ -65,21 +69,6 @@
 	&__link {
 		&:not(:last-of-type) {
 			margin-right: 2.5%;
-		}
-	}
-
-	&__icon {
-		color: $maire;
-		font-size: 2.125rem;
-		transition: $transitionSmooth;
-
-		@media (hover) {
-			&:hover,
-			&:active,
-			&:focus {
-				color: $blueLagoon;
-				transform: translateY(-0.25rem);
-			}
 		}
 	}
 }

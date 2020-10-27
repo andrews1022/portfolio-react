@@ -11,3 +11,15 @@ $colors: (
 		color: $color;
 	}
 }
+
+$icon-sizes: (
+	small: 2.25rem,
+	medium: 2.75rem,
+	large: 3.25rem
+);
+
+@each $name, $size in $icon-sizes {
+	.icon-#{$name} {
+		font-size: $size;
+	}
+}

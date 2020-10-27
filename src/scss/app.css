@@ -3,7 +3,7 @@
   position: absolute;
 }
 
-.nav__list, .project-card__header, .project-card__icon-row, .about__row, .contact__row, .contact__icon-row {
+.nav__list, .project-card__icon-row, .about__row, .contact__row, .contact__icon-row {
   display: flex;
   align-items: center;
 }
@@ -141,6 +141,18 @@ video {
   color: #2b2a24;
 }
 
+.icon-small {
+  font-size: 2.25rem;
+}
+
+.icon-medium {
+  font-size: 2.75rem;
+}
+
+.icon-large {
+  font-size: 3.25rem;
+}
+
 .form {
   color: #2b2a24;
   padding: 3%;
@@ -244,6 +256,16 @@ video {
   }
 }
 
+.icon {
+  transition: all 175ms ease-in-out;
+}
+
+@media (hover) {
+  .icon:hover, .icon:active, .icon:focus {
+    transform: translateY(-0.25rem);
+  }
+}
+
 .nav {
   position: absolute;
   top: 2.5%;
@@ -286,65 +308,68 @@ video {
 
 .project-card {
   color: #2b2a24;
-  flex: 0 1 48.5%;
+  flex: 0 1 32%;
   margin-bottom: 3%;
-  padding: 2.5% 2%;
+  overflow-x: hidden;
+  transition: all 175ms ease-in-out;
+}
+
+.project-card:hover {
+  transform: scale(1.02);
+}
+
+.project-card:not(:nth-child(3n)) {
+  margin-right: auto;
+}
+
+@media only screen and (max-width: 1024px) {
+  .project-card:not(:nth-child(3n)) {
+    margin-right: 0;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .project-card:nth-child(odd) {
+    margin-right: auto;
+  }
 }
 
 @media only screen and (max-width: 768px) {
   .project-card {
     flex: 1 1 100%;
-    padding: 3.5% 3%;
   }
 }
 
 @media only screen and (max-width: 480px) {
   .project-card {
     margin-bottom: 5%;
-    padding: 4.5% 4%;
   }
 }
 
-.project-card__thumbnail {
-  border-radius: 0.5rem;
-  transition: all 175ms ease-in-out;
-  width: 9rem;
-}
-
-@media only screen and (max-width: 415px) {
-  .project-card__thumbnail {
-    display: none;
-  }
-}
-
-.project-card__header-inner {
-  margin-left: 2%;
-}
-
-@media only screen and (max-width: 1280px) {
-  .project-card__header-inner {
-    margin-left: 3.25%;
-  }
-}
-
-@media only screen and (max-width: 415px) {
-  .project-card__header-inner {
-    margin-left: 0;
-  }
+.project-card__inner {
+  padding: 3% 4% 4.5% 4%;
 }
 
 .project-card__title {
   color: #046182;
-  font-size: 3rem;
-  font-weight: 600;
-  line-height: 1.15;
+  font: 600 2.625rem/1.15 "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   margin-bottom: 2.5%;
 }
 
 @media only screen and (max-width: 1440px) {
   .project-card__title {
-    font-size: 2.625rem;
+    font-size: 2.5rem;
   }
+}
+
+@media only screen and (max-width: 1024px) {
+  .project-card__title {
+    font-size: 2.375rem;
+  }
+}
+
+.project-card__tech {
+  font-size: 1.125rem;
 }
 
 .project-card__summary {
@@ -353,19 +378,6 @@ video {
 
 .project-card__link:not(:last-of-type) {
   margin-right: 2.5%;
-}
-
-.project-card__icon {
-  color: #2b2a24;
-  font-size: 2.125rem;
-  transition: all 175ms ease-in-out;
-}
-
-@media (hover) {
-  .project-card__icon:hover, .project-card__icon:active, .project-card__icon:focus {
-    color: #046182;
-    transform: translateY(-0.25rem);
-  }
 }
 
 .tool {
@@ -806,7 +818,7 @@ video {
 .projects__list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-start;
   margin-top: 3%;
 }
 

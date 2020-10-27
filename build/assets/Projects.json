@@ -25,7 +25,7 @@
 	},
 	{
 		"projectTitle": "JavaScript Handbook",
-		"summary": "A compilation of notes on vanilla JavaScript",
+		"summary": "A compilation of notes for reference on good ol' vanilla JavaScript",
 		"techUsed": ["Markdown"],
 		"codeLink": "https://github.com/andrews1022/javascript-handbook",
 		"liveLink": null,
