@@ -16,6 +16,22 @@
 		"thumbnail": "./project-screenshots/screenshot-temp-converter.jpg"
 	},
 	{
+		"projectTitle": "String Formatter",
+		"summary": "A simple string formatting app which allows you to convert text into a few different helpful formats.",
+		"techUsed": ["React", "CSS (Sass)"],
+		"codeLink": "https://github.com/andrews1022/string-formatter-react",
+		"liveLink": "https://string-formatter.netlify.app/",
+		"thumbnail": "./project-screenshots/screenshot-string-formatter.jpg"
+	},
+	{
+		"projectTitle": "My Portfolio",
+		"summary": "Is this cheating? This was my first medium sized project built using React & SCSS, and I'm darn proud of it!",
+		"techUsed": ["React", "CSS (Sass)"],
+		"codeLink": "https://github.com/andrews1022/portfolio-react",
+		"liveLink": null,
+		"thumbnail": "./project-screenshots/screenshot-portfolio.jpg"
+	},
+	{
 		"projectTitle": "Web Dev 2020 Course List",
 		"summary": "A list of Udemy courses from Brad Traversy's Web Development 2020 video",
 		"techUsed": ["Markdown"],

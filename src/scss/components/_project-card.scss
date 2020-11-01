@@ -24,6 +24,10 @@
 		}
 	}
 
+	@media #{$tabletLandscape} {
+		flex: 0 1 48%;
+	}
+
 	@media #{$tabletPortrait} {
 		flex: 1 1 100%;
 	}

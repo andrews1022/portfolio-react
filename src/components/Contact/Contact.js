@@ -7,7 +7,7 @@ const Contact = ({ section }) => {
 	const sectionName = section.toLowerCase();
 
 	const socialLinks = [
-		{ type: 'Resume', icon: 'fas fa-file-pdf', url: './assets/resume.pdf' },
+		{ type: 'Resume', icon: 'fas fa-file-pdf', url: './assets/resume-andrew-shearer.pdf' },
 		{ type: 'GitHub', icon: 'fab fa-github', url: 'https://github.com/andrews1022' },
 		{
 			type: 'LinkedIn',
