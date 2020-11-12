@@ -32,19 +32,19 @@
 		"thumbnail": "./project-screenshots/screenshot-portfolio.jpg"
 	},
 	{
+		"projectTitle": "PokeAPI w/ React Router",
+		"summary": "An app I built using the PokeAPI and React Router DOM to show Pokemon as a group, and individually.",
+		"techUsed": ["React", "CSS (Sass)"],
+		"codeLink": "https://github.com/andrews1022/pokeapi-react-router",
+		"liveLink": "https://pokeapi-react-router.netlify.app/",
+		"thumbnail": "./project-screenshots/screenshot-pokeapi-react-router-dom.jpg"
+	},
+	{
 		"projectTitle": "Web Dev 2020 Course List",
-		"summary": "A list of Udemy courses from Brad Traversy's Web Development 2020 video",
+		"summary": "A list of Udemy courses to help you learn web development in 2020 and beyond.",
 		"techUsed": ["Markdown"],
 		"codeLink": "https://github.com/andrews1022/web-development-2020-course-list",
 		"liveLink": null,
 		"thumbnail": "./project-screenshots/screenshot-course-list.jpg"
-	},
-	{
-		"projectTitle": "JavaScript Handbook",
-		"summary": "A compilation of notes for reference on good ol' vanilla JavaScript",
-		"techUsed": ["Markdown"],
-		"codeLink": "https://github.com/andrews1022/javascript-handbook",
-		"liveLink": null,
-		"thumbnail": "./project-screenshots/screenshot-javascript-handbook.jpg"
 	}
 ]
