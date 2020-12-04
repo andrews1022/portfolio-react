@@ -75,4 +75,16 @@
 			margin-right: 2.5%;
 		}
 	}
+
+	&__icon {
+		transition: $transitionSmooth;
+
+		@media (hover) {
+			&:hover,
+			&:active,
+			&:focus {
+				transform: translateY(-0.25rem);
+			}
+		}
+	}
 }

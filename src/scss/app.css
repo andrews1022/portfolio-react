@@ -386,6 +386,16 @@ video {
   margin-right: 2.5%;
 }
 
+.project-card__icon {
+  transition: all 175ms ease-in-out;
+}
+
+@media (hover) {
+  .project-card__icon:hover, .project-card__icon:active, .project-card__icon:focus {
+    transform: translateY(-0.25rem);
+  }
+}
+
 .tool {
   display: flex;
   align-items: center;

@@ -10,9 +10,9 @@
 	{
 		"projectTitle": "Temperature Converter",
 		"summary": "A 3-way temperature converter built using React and TypeScript.",
-		"techUsed": ["Typescript", "React", "CSS (Sass)"],
-		"codeLink": "https://github.com/andrews1022/temperature-converter-react-typescript",
-		"liveLink": "https://react-ts-temperatureconverter.netlify.app/",
+		"techUsed": ["React", "CSS (Sass)"],
+		"codeLink": "https://github.com/andrews1022/temperature-converter-react",
+		"liveLink": "https://react-temperatureconverter.netlify.app/",
 		"thumbnail": "./project-screenshots/screenshot-temp-converter.jpg"
 	},
 	{

@@ -1,5 +1,7 @@
 import React from 'react';
-import Icon from './../UI/Icon';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faDesktop } from '@fortawesome/free-solid-svg-icons';
 
 const ProjectCard = ({ project }) => {
 	return (
@@ -30,7 +32,7 @@ const ProjectCard = ({ project }) => {
 							target='_blank'
 							rel='noopener noreferrer'
 						>
-							<Icon code='fab fa-github' color='maire' size='small' />
+							<FontAwesomeIcon className='project-card__icon' icon={faGithub} size='2x' />
 						</a>
 					)}
 					{project.liveLink && (
@@ -40,7 +42,7 @@ const ProjectCard = ({ project }) => {
 							target='_blank'
 							rel='noopener noreferrer'
 						>
-							<Icon code='fas fa-desktop' color='maire' size='small' />
+							<FontAwesomeIcon className='project-card__icon' icon={faDesktop} size='2x' />
 						</a>
 					)}
 				</div>

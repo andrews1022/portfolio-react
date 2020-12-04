@@ -1,17 +1,27 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faFilePdf } from '@fortawesome/free-solid-svg-icons';
 import Heading from './../UI/Heading';
-import Icon from './../UI/Icon';
 import Form from './Form';
 
 const Contact = ({ section }) => {
 	const sectionName = section.toLowerCase();
 
 	const socialLinks = [
-		{ type: 'Resume', icon: 'fas fa-file-pdf', url: './assets/resume-andrew-shearer.pdf' },
-		{ type: 'GitHub', icon: 'fab fa-github', url: 'https://github.com/andrews1022' },
+		{
+			type: 'Resume',
+			icon: faFilePdf,
+			url: './assets/resume-andrew-shearer.pdf'
+		},
+		{
+			type: 'GitHub',
+			icon: faGithub,
+			url: 'https://github.com/andrews1022'
+		},
 		{
 			type: 'LinkedIn',
-			icon: 'fab fa-linkedin',
+			icon: faLinkedin,
 			url: 'https://www.linkedin.com/in/andrew-shearer-webdev/'
 		}
 	];
@@ -34,7 +44,7 @@ const Contact = ({ section }) => {
 								target='_blank'
 								rel='noopener noreferrer'
 							>
-								<Icon code={link.icon} color='maire' size='large' />
+								<FontAwesomeIcon className='contact__icon' icon={link.icon} size='1x' />
 							</a>
 						))}
 					</div>
