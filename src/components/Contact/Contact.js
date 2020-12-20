@@ -1,30 +1,11 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import { faFilePdf } from '@fortawesome/free-solid-svg-icons';
 import Heading from './../UI/Heading';
 import Form from './Form';
+import { socialLinks } from './../../data/data';
 
 const Contact = ({ section }) => {
 	const sectionName = section.toLowerCase();
-
-	const socialLinks = [
-		{
-			type: 'Resume',
-			icon: faFilePdf,
-			url: './assets/resume-andrew-shearer.pdf'
-		},
-		{
-			type: 'GitHub',
-			icon: faGithub,
-			url: 'https://github.com/andrews1022'
-		},
-		{
-			type: 'LinkedIn',
-			icon: faLinkedin,
-			url: 'https://www.linkedin.com/in/andrew-shearer-webdev/'
-		}
-	];
 
 	return (
 		<section className={sectionName} id={sectionName}>

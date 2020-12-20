@@ -40,11 +40,11 @@
 		"thumbnail": "./project-screenshots/screenshot-pokeapi-react-router-dom.jpg"
 	},
 	{
-		"projectTitle": "Web Dev 2020 Course List",
-		"summary": "A list of Udemy courses to help you learn web development in 2020 and beyond.",
-		"techUsed": ["Markdown"],
-		"codeLink": "https://github.com/andrews1022/web-development-2020-course-list",
-		"liveLink": null,
-		"thumbnail": "./project-screenshots/screenshot-course-list.jpg"
+		"projectTitle": "Trustic Wealth Management Client Survey",
+		"summary": "A client survey for a fictional wealth management company. I built this project to learn the basics of Framer Motion, as well as using React Modal, and various React form inputs.",
+		"techUsed": ["React", "CSS (Sass)"],
+		"codeLink": "https://github.com/andrews1022/trustic-wealth-management-survey-react",
+		"liveLink": "https://trusticwealthmanagementsurvey.netlify.app/",
+		"thumbnail": "./project-screenshots/screenshot-trustic-wealth-management-survey.jpg"
 	}
 ]

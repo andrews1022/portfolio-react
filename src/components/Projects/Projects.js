@@ -8,9 +8,17 @@ const Projects = ({ section }) => {
 	const [projects, setProjects] = useState([]);
 
 	useEffect(() => {
-		fetch('./assets/Projects.json')
-			.then((response) => response.json())
-			.then((json) => setProjects(json));
+		const getProjects = async () => {
+			const response = await fetch('./assets/Projects.json');
+			const json = await response.json();
+			setProjects(json);
+		};
+
+		getProjects();
+
+		return () => {
+			setProjects([]);
+		};
 	}, []);
 
 	return (
