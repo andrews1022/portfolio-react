@@ -5,17 +5,23 @@
 	position: absolute;
 }
 
-%flex-align-center {
+%flexAlignCenter {
 	display: flex;
 	align-items: center;
 }
 
-%flex-justify-center {
+%flexJustifyCenter {
 	display: flex;
 	justify-content: center;
 }
 
-%section-padding {
+%flexAlignAndJustifyCenter {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+%sectionPadding {
 	padding-left: 7%;
 	padding-right: 7%;
 
@@ -30,7 +36,7 @@
 	line-height: 1.4;
 }
 
-%rounded-border-with-subtle-box-shadow {
+%roundedBorderWithSubtleBoxShadow {
 	border: 1px solid $maire;
 	border-radius: 1rem;
 	box-shadow: $subtleBoxShadow;

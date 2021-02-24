@@ -1,12 +1,12 @@
 .nav {
-	@extend %flex-justify-center;
+	@extend %flexJustifyCenter;
 	position: absolute;
 	top: 2.5%;
 	left: 50%;
 	transform: translateX(-50%);
 
 	&__list {
-		@extend %flex-align-center;
+		@extend %flexAlignCenter;
 		color: $maire;
 	}
 

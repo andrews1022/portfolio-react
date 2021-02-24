@@ -5,9 +5,7 @@ const Nav = ({ navLinks }) => {
 	return (
 		<nav className='nav'>
 			<ul className='nav__list'>
-				{navLinks.map((link) => (
-					<NavLink key={link} linkText={link} />
-				))}
+				{navLinks.length ? navLinks.map((link) => <NavLink key={link} linkText={link} />) : null}
 			</ul>
 		</nav>
 	);

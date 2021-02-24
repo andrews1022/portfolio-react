@@ -1,10 +1,10 @@
 .contact {
-	@extend %section-padding;
+	@extend %sectionPadding;
 	padding-top: 4%;
 	padding-bottom: 5%;
 
 	&__row {
-		@extend %flex-align-center;
+		@extend %flexAlignCenter;
 
 		@media #{$tabletPortrait} {
 			flex-direction: column;
@@ -32,7 +32,7 @@
 	}
 
 	&__heading {
-		@include section-heading($maire, 0);
+		@include sectionHeading($maire, 0);
 	}
 
 	&__copy {
@@ -46,7 +46,7 @@
 	}
 
 	&__icon-row {
-		@extend %flex-align-center;
+		@extend %flexAlignCenter;
 	}
 
 	&__icon-link {

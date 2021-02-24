@@ -30,9 +30,7 @@ const About = ({ section }) => {
 					</p>
 					<Heading text='My Tools' color='white-smoke' />
 					<ul className='tool'>
-						{tools.map((tool) => (
-							<Tool key={tool} toolText={tool} />
-						))}
+						{tools.length ? tools.map((tool) => <Tool key={tool} toolText={tool} />) : null}
 					</ul>
 				</div>
 			</div>

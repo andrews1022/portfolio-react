@@ -26,6 +26,8 @@ export const tools = [
 	'CSS (Sass & Less)',
 	'HTML',
 	'Git',
+	'WordPress',
+	'Shopify',
 	'Adobe CC'
 ];
 

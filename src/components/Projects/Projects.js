@@ -16,6 +16,7 @@ const Projects = ({ section }) => {
 
 		getProjects();
 
+		// cleanup
 		return () => {
 			setProjects([]);
 		};

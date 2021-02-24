@@ -1,23 +1,23 @@
-@mixin flex($justify-content, $align-items) {
+@mixin flex($jc, $ai) {
 	display: flex;
-	align-items: $align-items;
-	justify-content: $justify-content;
+	align-items: $ai;
+	justify-content: $jc;
 }
 
-@mixin size($height, $width: $height) {
-	height: $height;
-	width: $width;
+@mixin size($h, $w: $h) {
+	height: $h;
+	width: $w;
 }
 
-@mixin hero-heading($color, $size, $weight) {
-	color: $color;
-	font-size: $size;
-	font-weight: $weight;
+@mixin heroHeading($c, $s, $w) {
+	color: $c;
+	font-size: $s;
+	font-weight: $w;
 }
 
-@mixin section-heading($color, $margin, $size: 5.5rem, $weight: 800) {
-	color: $color;
-	font-size: $size;
-	font-weight: $weight;
-	margin-bottom: $margin;
+@mixin sectionHeading($c, $m, $s: 5.5rem, $w: 800) {
+	color: $c;
+	font-size: $s;
+	font-weight: $w;
+	margin-bottom: $m;
 }

@@ -1,5 +1,5 @@
 .form {
-	@extend %rounded-border-with-subtle-box-shadow;
+	@extend %roundedBorderWithSubtleBoxShadow;
 	color: $maire;
 	padding: 3%;
 
@@ -17,7 +17,7 @@
 		}
 
 		&:last-of-type {
-			@extend %flex-justify-center;
+			@extend %flexJustifyCenter;
 		}
 	}
 

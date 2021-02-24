@@ -1,78 +1,96 @@
-.project-card {
-	@extend %rounded-border-with-subtle-box-shadow;
-	color: $maire;
-	flex: 0 1 32%;
-	margin-bottom: 3%;
-	overflow-x: hidden;
-	transition: $transitionSmooth;
+.pc {
+	border-radius: 1.5rem;
+	box-shadow: $subtleBoxShadow;
+	overflow: hidden;
+	position: relative;
+	transition: $transitionSmoothMedium;
+	backface-visibility: hidden;
 
-	&:hover {
-		transform: scale(1.02);
-	}
+	@media (hover) {
+		&:hover,
+		&:active,
+		&:focus {
+			box-shadow: 0 0.75rem 1rem 0 rgba(0, 0, 0, 0.25);
+			transform: translateY(-0.25rem);
 
-	&:not(:nth-child(3n)) {
-		margin-right: auto;
-
-		@media #{$tabletLandscape} {
-			margin-right: 0;
+			.pc__overlay {
+				opacity: 1;
+				pointer-events: all;
+			}
 		}
-	}
-
-	&:nth-child(odd) {
-		@media #{$tabletLandscape} {
-			margin-right: auto;
-		}
-	}
-
-	@media #{$tabletLandscape} {
-		flex: 0 1 48%;
-	}
-
-	@media #{$tabletPortrait} {
-		flex: 1 1 100%;
-	}
-
-	@media #{$mobileMedium} {
-		margin-bottom: 5%;
 	}
 
 	// &__thumbnail {
 	// }
 
+	&__overlay {
+		@include size(100%);
+		@extend %flexAlignAndJustifyCenter;
+		position: absolute;
+		top: 0;
+		left: 0;
+		background-color: rgba(0, 0, 0, 0.75);
+		color: $white;
+		opacity: 0;
+		pointer-events: none;
+		text-align: center;
+		transition: $transitionSmoothMedium;
+
+		@media #{$tabletLandscape} {
+			background-color: $charcoal;
+			display: block;
+			opacity: 1;
+			padding: 5% 0;
+			position: static;
+		}
+	}
+
 	&__inner {
-		padding: 3% 4% 4.5% 4%;
+		width: 80%;
+
+		@media #{$tabletLandscape} {
+			margin: $marginCenter;
+		}
 	}
 
 	&__title {
-		color: $blueLagoon;
-		font: 600 2.625rem/1.15 $fontSegoe;
+		font-size: 3rem;
+		font-weight: 700;
 		margin-bottom: 2.5%;
-
-		@media #{$desktopSmall} {
-			font-size: 2.5rem;
-		}
+		line-height: 1.33;
 
 		@media #{$tabletLandscape} {
 			font-size: 2.375rem;
+			line-height: 1.15;
+			margin-bottom: 5%;
 		}
 	}
 
 	&__tech {
 		font-size: 1.125rem;
+		line-height: 1.5;
 	}
 
 	&__summary {
-		@extend %copy;
-		margin: 3.5% 0;
+		font-size: 1.125rem;
+		line-height: 1.25;
+		margin: 2.5% 0;
+
+		@media #{$tabletLandscape} {
+			margin: 5% 0;
+		}
 	}
 
-	&__icon-row {
-		@extend %flex-align-center;
-	}
+	// &__icon-row {
+	// }
 
 	&__link {
-		&:not(:last-of-type) {
-			margin-right: 2.5%;
+		&:first-of-type {
+			margin-right: 1.5%;
+		}
+
+		&:last-of-type {
+			margin-left: 1.5%;
 		}
 	}
 
@@ -83,7 +101,7 @@
 			&:hover,
 			&:active,
 			&:focus {
-				transform: translateY(-0.25rem);
+				opacity: 0.75;
 			}
 		}
 	}

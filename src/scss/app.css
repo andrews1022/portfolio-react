@@ -3,13 +3,19 @@
   position: absolute;
 }
 
-.nav__list, .project-card__icon-row, .about__row, .contact__row, .contact__icon-row {
+.nav__list, .about__row, .contact__row, .contact__icon-row {
   display: flex;
   align-items: center;
 }
 
 .form__group:last-of-type, .nav {
   display: flex;
+  justify-content: center;
+}
+
+.pc__overlay {
+  display: flex;
+  align-items: center;
   justify-content: center;
 }
 
@@ -25,12 +31,12 @@
   }
 }
 
-.project-card__summary, .tool__text, .about__copy, .contact__copy {
+.tool__text, .about__copy, .contact__copy {
   font-size: 1.375rem;
   line-height: 1.4;
 }
 
-.form, .project-card {
+.form {
   border: 1px solid #2b2a24;
   border-radius: 1rem;
   box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.15);
@@ -219,6 +225,7 @@ video {
 @media only screen and (max-width: 900px) {
   .heading {
     font-size: 4.5rem;
+    margin-bottom: 5%;
   }
 }
 
@@ -290,93 +297,107 @@ video {
   }
 }
 
-.project-card {
-  color: #2b2a24;
-  flex: 0 1 32%;
-  margin-bottom: 3%;
-  overflow-x: hidden;
-  transition: all 175ms ease-in-out;
+.pc {
+  border-radius: 1.5rem;
+  box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  position: relative;
+  transition: all 300ms ease-in-out;
+  backface-visibility: hidden;
 }
 
-.project-card:hover {
-  transform: scale(1.02);
+@media (hover) {
+  .pc:hover, .pc:active, .pc:focus {
+    box-shadow: 0 0.75rem 1rem 0 rgba(0, 0, 0, 0.25);
+    transform: translateY(-0.25rem);
+  }
+  .pc:hover .pc__overlay, .pc:active .pc__overlay, .pc:focus .pc__overlay {
+    opacity: 1;
+    pointer-events: all;
+  }
 }
 
-.project-card:not(:nth-child(3n)) {
-  margin-right: auto;
+.pc__overlay {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+  color: #fff;
+  opacity: 0;
+  pointer-events: none;
+  text-align: center;
+  transition: all 300ms ease-in-out;
 }
 
 @media only screen and (max-width: 1024px) {
-  .project-card:not(:nth-child(3n)) {
-    margin-right: 0;
+  .pc__overlay {
+    background-color: #424242;
+    display: block;
+    opacity: 1;
+    padding: 5% 0;
+    position: static;
   }
+}
+
+.pc__inner {
+  width: 80%;
 }
 
 @media only screen and (max-width: 1024px) {
-  .project-card:nth-child(odd) {
-    margin-right: auto;
+  .pc__inner {
+    margin: 0 auto;
   }
+}
+
+.pc__title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 2.5%;
+  line-height: 1.33;
 }
 
 @media only screen and (max-width: 1024px) {
-  .project-card {
-    flex: 0 1 48%;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  .project-card {
-    flex: 1 1 100%;
-  }
-}
-
-@media only screen and (max-width: 480px) {
-  .project-card {
+  .pc__title {
+    font-size: 2.375rem;
+    line-height: 1.15;
     margin-bottom: 5%;
   }
 }
 
-.project-card__inner {
-  padding: 3% 4% 4.5% 4%;
+.pc__tech {
+  font-size: 1.125rem;
+  line-height: 1.5;
 }
 
-.project-card__title {
-  color: #046182;
-  font: 600 2.625rem/1.15 "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  margin-bottom: 2.5%;
-}
-
-@media only screen and (max-width: 1440px) {
-  .project-card__title {
-    font-size: 2.5rem;
-  }
+.pc__summary {
+  font-size: 1.125rem;
+  line-height: 1.25;
+  margin: 2.5% 0;
 }
 
 @media only screen and (max-width: 1024px) {
-  .project-card__title {
-    font-size: 2.375rem;
+  .pc__summary {
+    margin: 5% 0;
   }
 }
 
-.project-card__tech {
-  font-size: 1.125rem;
+.pc__link:first-of-type {
+  margin-right: 1.5%;
 }
 
-.project-card__summary {
-  margin: 3.5% 0;
+.pc__link:last-of-type {
+  margin-left: 1.5%;
 }
 
-.project-card__link:not(:last-of-type) {
-  margin-right: 2.5%;
-}
-
-.project-card__icon {
+.pc__icon {
   transition: all 175ms ease-in-out;
 }
 
 @media (hover) {
-  .project-card__icon:hover, .project-card__icon:active, .project-card__icon:focus {
-    transform: translateY(-0.25rem);
+  .pc__icon:hover, .pc__icon:active, .pc__icon:focus {
+    opacity: 0.75;
   }
 }
 
@@ -386,7 +407,7 @@ video {
   flex-wrap: wrap;
   justify-content: flex-end;
   margin: 3% 0 0 auto;
-  width: 75%;
+  width: 70%;
 }
 
 @media only screen and (max-width: 1440px) {
@@ -656,7 +677,7 @@ video {
 .hero__background {
   height: 100vh;
   margin-left: auto;
-  transition: all 250ms ease-in-out;
+  transition: all 300ms ease-in-out;
 }
 
 @media only screen and (max-width: 1280px) {
@@ -682,7 +703,7 @@ video {
   top: 18%;
   left: 6.5%;
   text-align: right;
-  transition: all 250ms ease-in-out;
+  transition: all 300ms ease-in-out;
 }
 
 @media only screen and (max-width: 1680px) {
@@ -816,21 +837,14 @@ video {
 }
 
 .projects__list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  margin-top: 3%;
+  display: grid;
+  gap: 3rem;
+  grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
 }
 
 @media only screen and (max-width: 768px) {
   .projects__list {
-    margin-top: 4.5%;
-  }
-}
-
-@media only screen and (max-width: 480px) {
-  .projects__list {
-    margin-top: 7.5%;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   }
 }
 /*# sourceMappingURL=app.css.map */

@@ -5,7 +5,7 @@
 	&__background {
 		height: 100vh;
 		margin-left: auto;
-		transition: $transitionSmoothResize;
+		transition: $transitionSmoothMedium;
 
 		@media #{$laptopSmall} {
 			height: auto;
@@ -25,7 +25,7 @@
 		top: 18%;
 		left: 6.5%;
 		text-align: right;
-		transition: $transitionSmoothResize;
+		transition: $transitionSmoothMedium;
 
 		@media #{$desktopMedium} {
 			top: 16%;
@@ -53,7 +53,7 @@
 	}
 
 	&__heading-name {
-		@include hero-heading($maire, 6.5rem, 800);
+		@include heroHeading($maire, 6.5rem, 800);
 
 		@media #{$desktopMedium} {
 			font-size: 6rem;
@@ -85,7 +85,7 @@
 	}
 
 	&__heading-role {
-		@include hero-heading($blueLagoon, 4.25rem, 600);
+		@include heroHeading($blueLagoon, 4.25rem, 600);
 
 		@media #{$desktopMedium} {
 			font-size: 3.75rem;

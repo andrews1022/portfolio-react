@@ -17,17 +17,19 @@ const Contact = ({ section }) => {
 						reach out to me on LinkedIn!
 					</p>
 					<div className='contact__icon-row'>
-						{socialLinks.map((link) => (
-							<a
-								className='contact__icon-link'
-								href={link.url}
-								key={link.type}
-								target='_blank'
-								rel='noopener noreferrer'
-							>
-								<FontAwesomeIcon className='contact__icon' icon={link.icon} size='1x' />
-							</a>
-						))}
+						{socialLinks.length
+							? socialLinks.map((link) => (
+									<a
+										className='contact__icon-link'
+										href={link.url}
+										key={link.type}
+										target='_blank'
+										rel='noopener noreferrer'
+									>
+										<FontAwesomeIcon className='contact__icon' icon={link.icon} size='1x' />
+									</a>
+							  ))
+							: null}
 					</div>
 				</div>
 				<div className='contact__box'>
